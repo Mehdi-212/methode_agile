@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>ChocoRama</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+              <li><a href="#Accueil">Accueil</a></li>
+              <li><a href="#Produit">Produit</a></li>
+              <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 id="Accueil">Bienvenue sur ChocoRama</h1>
+            <p>Vivez une expérience  de chocolat unique et de qualité supérieur !</p>
+        </div>
+    </div> 
+    
+    <h2 id="Produit">Produit</h2>
+    <main>
+        <section class="carousel">
+            <ul class="carousel-items">
+                <ul class="carousel-items">
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title"> Chocolat blanc</h2>
+                            <img src="img/Comment-faire-fondre-le-chocolat-blanc.jpg" />
+                            <div class="card-content">
+                                <p>Chocolat crémeux, gourmand, à consommer sous différentes formes. Retrouver nos références sur le site.</p>
+                                <a href="#" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Chocolat au lait</h2>
+                            <img src="img/Chocolat-1.png" />
+                            <div class="card-content">
+                                <p>Chocolat latté, rond et gourmand, réalisé avec nos meilleures producteurs laitiers. Retrouver nos références sur le site.</p>
+                                <a href="#" class="button">Read more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel-item">
+                        <div class="card">
+                            <h2 class="card-title">Chocolat noir</h2>
+                            <img src="img/tablette-chocolat-noir-mbo-71-90g.jpg" />
+                            <div class="card-content">
+                                <p>Chocolat pur et puissant en bouche, forte teneur en cacao. Retrouver nos références sur le site.</p>
+                                <a href="#" class="button">Read more</a>
+                            </div>
+        </section>
+    </main>
+<footer>
+    <div class="contactez-nous">
+        <h1 id="Contact">Contactez-nous</h1>
+
+        <form action="/page-traitement-donnees" method="post">
+        <div>
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Martin" required>
+        </div>
+        <div>
+        <label for="email">Votre e-mail</label>
+        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+        </div>
+        <div>
+        <label for="sujet">Quel est le sujet de votre message ?</label>
+        <select name="sujet" id="sujet" required>
+        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+        <option value="probleme-compte">Problème avec mon compte</option>
+        <option value="question-produit">Question à propos d’un produit</option>
+        <option value="suivi-commande">Suivi de ma commande</option>
+        <option value="autre">Autre...</option>
+        </select>
+        </div>
+        <div>
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+        </div>
+        <div>
+        <button type="submit">Envoyer mon message</button>
+        </div>
+        </form>
+    </div>
+    <div class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.5798568748332!2d3.1270704294134313!3d45.75956825488677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71c45a4dac12b%3A0x7e043ce074dc12e1!2sP%C3%A9pini%C3%A8re%20et%20H%C3%B4tel%20d&#39;Entreprises%20Pascalis%20-%20Clermont%20Auvergne%20M%C3%A9tropole!5e0!3m2!1sfr!2sfr!4v1680618834064!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</footer>
+</body>
+</html>
